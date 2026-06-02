@@ -5,7 +5,8 @@ Análise de Dados – Turma V2
 ## Limpeza e Tratamento dos Dados
 - Importação das bibliotecas Pandas e NumPy.
 - Leitura do dataset.
-- Identificação de valores nulos e duplicados.
+- Identificação de valores nulos e duplicados.  
+
 Através da análise foi verificado um total de 830.000 linhas e 14 colunas. Encontradas 4 colunas que estavam com todas as linhas nulas e 96.553 registros com duplicatas.
 Criada a cópia do dataset, para iniciar o tratamento dos dados, onde optei por excluir as colunas unnamed:10, unnamed:11, unnamed:12, unnamed:13, visto que todas as linhas referentes a elas estavam vazias, e esses dados não agregavam em nada na exploração. Foi feita a análise das linhas duplicadas e feito a remoção das mesmas, mantendo a primeira ocorrência. Haviam categorias e produtos com ‘#N/D’ onde na coluna ‘PR_CAT’ foi optado por substituir por ‘Sem Categoria’ e na coluna ‘PR_NOME’ por ‘Produto Não Informado’. Feita a conversão da coluna ‘DATA’ para datetime, muitas datas ainda ficaram como ‘NaT’ mas mantive assim, visto que não utilizei elas para responder as perguntas de negócio. 
 ## Verificada as estatísticas: 
